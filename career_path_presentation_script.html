@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Find the Right Career Path — Presentation Script</title>
+  <style>
+    :root {
+      --bg: #f7f7f5;
+      --card: #ffffff;
+      --text: #202124;
+      --muted: #6b7280;
+      --accent: #f28c28;
+      --line: #e5e7eb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.65;
+    }
+    header {
+      background: #202124;
+      color: white;
+      padding: 36px 20px;
+    }
+    .header-inner, main {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .eyebrow {
+      color: #ffbf75;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    h1 {
+      margin: 8px 0;
+      font-size: clamp(28px, 5vw, 42px);
+      line-height: 1.15;
+    }
+    header p { margin: 10px 0 0; color: #d1d5db; }
+    main { padding: 28px 16px 60px; }
+    .person {
+      margin: 0 0 22px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--card);
+      overflow: hidden;
+      box-shadow: 0 3px 12px rgba(0,0,0,.035);
+    }
+    .person > summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      font-size: 19px;
+      font-weight: 700;
+    }
+    .person > summary::-webkit-details-marker { display: none; }
+    .person > summary::after {
+      content: "+";
+      color: var(--accent);
+      font-size: 25px;
+      line-height: 1;
+    }
+    .person[open] > summary::after { content: "−"; }
+    .person-label { display: flex; flex-direction: column; }
+    .person-label small {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 400;
+      margin-top: 2px;
+    }
+    .slides { border-top: 1px solid var(--line); padding: 4px 14px 14px; }
+    .slide {
+      margin-top: 12px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .slide summary {
+      cursor: pointer;
+      padding: 13px 15px;
+      background: #fcfcfb;
+      font-weight: 700;
+      color: #30343b;
+    }
+    .slide summary::marker { color: var(--accent); }
+    .slide-content { padding: 4px 16px 16px; }
+    .slide-content p { margin: 12px 0; }
+    .slide-content p:last-child { margin-bottom: 0; }
+    .slide-tag {
+      display: inline-block;
+      margin-top: 14px;
+      color: #9a4d08;
+      background: #fff0df;
+      border-radius: 6px;
+      padding: 3px 8px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .5px;
+    }
+    .note {
+      margin-top: 28px;
+      padding: 15px 17px;
+      border-left: 4px solid var(--accent);
+      background: #fff;
+      color: #4b5563;
+      border-radius: 0 8px 8px 0;
+      font-size: 14px;
+    }
+    button {
+      border: 1px solid #d1d5db;
+      background: white;
+      border-radius: 8px;
+      padding: 9px 12px;
+      cursor: pointer;
+      font-size: 13px;
+      color: #374151;
+    }
+    .toolbar { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 18px; }
+    @media print {
+      body { background: white; }
+      header { background: white; color: black; padding: 15px 0; }
+      header p, .eyebrow { color: #444; }
+      main { padding: 10px 0; }
+      .toolbar { display: none; }
+      .person, .slide { box-shadow: none; break-inside: avoid; }
+      details:not([open]) > *:not(summary) { display: block !important; }
+      .person > summary::after { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="eyebrow">English for Career</div>
+      <h1>How to Find the Right Career Path</h1>
+      <p>Presentation script · 5 speakers · 8 slides</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="toolbar">
+      <button type="button" onclick="document.querySelectorAll('.person, .slide').forEach(el => el.open = true)">Expand all</button>
+      <button type="button" onclick="document.querySelectorAll('.person, .slide').forEach(el => el.open = false)">Collapse all</button>
+      <button type="button" onclick="window.print()">Print / Save as PDF</button>
+    </div>
+
+    <details class="person" open>
+      <summary><span class="person-label">Person 1<small>Slides 1–2 · Introduction</small></span></summary>
+      <div class="slides">
+        <details class="slide" open>
+          <summary>Slide 1 — Opening</summary>
+          <div class="slide-content">
+            <p>Good morning, everyone.</p>
+            <p>Today, we're going to talk about how to find the right career path.</p>
+            <p>Choosing a career is an important decision because it can affect our future, lifestyle, and personal development.</p>
+            <p>In this presentation, we'll discuss some simple steps to help us understand ourselves, explore career options, and plan our future.</p>
+            <p>Let's get started.</p>
+          </div>
+        </details>
+        <details class="slide" open>
+          <summary>Slide 2 — Why Is Choosing a Career Difficult?</summary>
+          <div class="slide-content">
+            <p>Choosing a career isn't always easy.</p>
+            <p>We all have different interests and strengths. Some people enjoy technology, while others prefer business, design, or other fields.</p>
+            <p>Sometimes, we're not sure which career is right for us. There are also many job options and requirements to consider.</p>
+            <p>At the same time, we want a job that matches our personal goals and gives us a good work-life balance.</p>
+            <p>So, how can we find the right career for us?</p>
+            <p>To answer this question, let's move to the first step: knowing ourselves. My friend will explain this further.</p>
+          </div>
+        </details>
+      </div>
+    </details>
+
+    <details class="person" open>
+      <summary><span class="person-label">Person 2<small>Slides 3–4 · Know Yourself and Explore</small></span></summary>
+      <div class="slides">
+        <details class="slide" open>
+          <summary>Slide 3 — Know Yourself</summary>
+          <div class="slide-content">
+            <p>Thank you.</p>
+            <p>The first step is to know ourselves. We need to understand our interests, strengths, skills, and personal values.</p>
+            <p>We can start by asking four simple questions.</p>
+            <p>First, what do we enjoy doing? This helps us understand our interests.</p>
+            <p>Second, what are we good at? These are our strengths.</p>
+            <p>Third, what skills do we have, such as programming, communication, or problem-solving?</p>
+            <p>And fourth, what matters most to us? For example, a good salary, flexible working hours, or a comfortable work environment.</p>
+            <p>By understanding these things, we can identify careers that match our interests and abilities.</p>
+          </div>
+        </details>
+        <details class="slide" open>
+          <summary>Slide 4 — Explore Your Options</summary>
+          <div class="slide-content">
+            <p>After understanding ourselves, the next step is to explore different career options.</p>
+            <p>We can start by researching jobs in fields that interest us. We should also learn about their responsibilities, required skills, and qualifications.</p>
+            <p>Another useful way is to talk to people who already work in our desired field. We can ask about their experiences and daily tasks.</p>
+            <p>We can also use LinkedIn to connect with professionals and discover job opportunities.</p>
+            <p>Remember, a job title doesn't always tell us everything about a job. We need to understand what the job actually involves.</p>
+            <p>Now that we know how to explore our options, let's learn how to set our career goals. My friend will explain the next step.</p>
+          </div>
+        </details>
+      </div>
+    </details>
+
+    <details class="person" open>
+      <summary><span class="person-label">Person 3<small>Slide 5 · Set Career Goals</small></span></summary>
+      <div class="slides">
+        <details class="slide" open>
+          <summary>Slide 5 — Set Your Career Goals</summary>
+          <div class="slide-content">
+            <p>Thank you.</p>
+            <p>After exploring our options, we need to set clear career goals.</p>
+            <p>It's helpful to have both short-term and long-term goals. We should also break big goals into smaller steps so they're easier to achieve.</p>
+            <p>For example, imagine that we want to become a data scientist.</p>
+            <p>In the short term, we can learn Python and statistics.</p>
+            <p>In the medium term, we can build projects and gain practical experience.</p>
+            <p>In the long term, we can apply for data scientist positions.</p>
+            <p>We don't have to achieve everything at once. The important thing is to have a clear direction and keep making progress.</p>
+            <p>But having a plan is only the beginning. The next step is to take action. My friend will explain how.</p>
+          </div>
+        </details>
+      </div>
+    </details>
+
+    <details class="person" open>
+      <summary><span class="person-label">Person 4<small>Slides 6–7 · Take Action and Adapt</small></span></summary>
+      <div class="slides">
+        <details class="slide" open>
+          <summary>Slide 6 — Turn Your Plan into Action</summary>
+          <div class="slide-content">
+            <p>Thank you.</p>
+            <p>Once we have a career plan, it's time to take action.</p>
+            <p>There are four things we can do.</p>
+            <p>First, improve our skills by learning what employers are looking for.</p>
+            <p>Second, update our resume to highlight our skills, projects, and experience.</p>
+            <p>Third, look for opportunities such as internships, jobs, or professional projects.</p>
+            <p>Finally, track our progress to see what we've achieved and what we still need to improve.</p>
+            <p>These small steps can help us prepare for our future careers.</p>
+          </div>
+        </details>
+        <details class="slide" open>
+          <summary>Slide 7 — Career Paths Can Change</summary>
+          <div class="slide-content">
+            <p>However, we should also remember that career paths can change.</p>
+            <p>Sometimes, we may discover that a job isn't right for us. And that's okay. It doesn't mean we've failed.</p>
+            <p>Every experience can teach us something new. We can learn new skills, understand our interests better, and discover what kind of work we enjoy.</p>
+            <p>That's why we should be open to feedback, learn from our mistakes, and adjust our goals when necessary.</p>
+            <p>Finding the right career takes time, and we don't have to get everything right on the first try.</p>
+            <p>Now, let's summarize the key points of our presentation. My friend will deliver the conclusion.</p>
+          </div>
+        </details>
+      </div>
+    </details>
+
+    <details class="person" open>
+      <summary><span class="person-label">Person 5<small>Slide 8 · Conclusion</small></span></summary>
+      <div class="slides">
+        <details class="slide" open>
+          <summary>Slide 8 — Find Your Path, Build Your Future</summary>
+          <div class="slide-content">
+            <p>Thank you.</p>
+            <p>To conclude, finding the right career path starts with three simple questions.</p>
+            <p>First, what's important to me? We need to understand our interests, strengths, and values.</p>
+            <p>Second, where can I go next? We need to explore different career options and learn about the opportunities available.</p>
+            <p>And third, what do I want next? We need to set goals and take steps to achieve them.</p>
+            <p>Remember, we don't need to have our entire future figured out today. We can start with small steps, keep learning, and improve along the way.</p>
+            <p>The most important thing is to understand ourselves, explore our options, and take action toward a career that suits us.</p>
+            <p>Thank you for listening. Do you have any questions?</p>
+          </div>
+        </details>
+      </div>
+    </details>
+
+    <div class="note">
+      <strong>Speaking tip:</strong> Contractions such as <em>we're</em>, <em>don't</em>, <em>doesn't</em>, and <em>it's</em> sound natural in spoken English. If your lecturer prefers a more formal style, you can use the full forms instead.
+    </div>
+  </main>
+</body>
+</html>
